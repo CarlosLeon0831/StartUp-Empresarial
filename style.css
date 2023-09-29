@@ -227,10 +227,17 @@ header {
 .form input {
     width: 100%;
     height: 50px;
+    font-size: 1rem;
+    border: 1px solid var(--primary);
+    background-color: var(--white);
+}
+
+.form input::placeholder {
+    padding-left: 10px;
 }
 
 /* Add space between the first 4 input text boxes */
-.form input:nth-child(-n + 5) {
+.form input:nth-child(-n + 6) {
     margin-bottom: 20px;
 }
 
@@ -243,6 +250,20 @@ header {
 /* .form input:nth-child(6)::placeholder {
     
 } */
+
+.form__button {
+    padding: 10px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.button__container {
+    display: flex;
+    justify-content: right;
+}
 
 
 .clientes__container {
