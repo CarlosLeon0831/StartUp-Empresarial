@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html,
@@ -138,7 +138,7 @@ header {
 .soluciones__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-    gap: 40px 70px;
+    gap:50px 70px;
     grid-auto-rows: minmax(100px, auto);
     margin: 10px 100px;
 }
@@ -148,6 +148,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    min-height: 50%;
 }
 
 .solucion img {
@@ -386,4 +387,146 @@ header {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 800px) {
+   p {
+    font-size: 4vw;
+   }
+
+   strong {
+    font-size: 4vw;
+   }
+
+   h2 {
+    font-size: 9vw;
+   }
+
+   header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .menu__logo {
+    width: 200px;
+   }
+
+   .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 0;
+}
+
+   .menu a{
+    font-size: 4vw;
+    padding: 0;
+    margin-bottom: 10px;
+   }
+
+   .slider-frame {
+    height: 500px;
+   }
+
+   .slide__background {
+    height: 500px;
+   }
+
+   .slide__background h1 {
+    font-size: 10vw;
+    padding: 0 30px;
+   }
+
+   .soluciones__container {
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+
+   .soluciones__wrapper {
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: repeat(2, 1fr);
+      gap: 100px 10px;
+      grid-auto-rows: minmax(100px, auto);
+      margin: 10px 40px;
+  }
+
+  .solucion p{
+    width: 150px;
+  }
+
+  .nosotros__container {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .nosotros-imagen {
+    max-width: 100%;
+  }
+
+  .nosotros-texto {
+    width: 80%;
+  }
+
+  .form__container {
+    flex-direction: column;
+  }
+
+  .form-imagen {
+    width: 100%;
+  }
+
+  .form__inner-container {
+    width: 80%;
+  }
+
+  .form__button {
+    width: 100%;
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
+
+  .form input::placeholder {
+    font-size: 4vw;
+}
+
+
+  .clientes__inner-container {
+    flex-direction: column;
+  }
+
+  .cliente {
+    margin-bottom: 20px;
+  }
+
+  .footer__inner-container {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    height: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__text a {
+    font-size: 4vw;
+  }
 }
