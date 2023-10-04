@@ -328,7 +328,7 @@ header {
 .footer__logo {
     padding: 0 100px 0 0;
     width: auto;
-    height: 100px;
+    height: 70px;
 }
 
 
@@ -522,8 +522,8 @@ header {
 
   .footer__logo {
     height: 100%;
-    padding: 0;
-    margin-bottom: 30px;
+    padding: 0 60px;
+    margin-bottom: 50px;
   }
 
   .footer__text a {
