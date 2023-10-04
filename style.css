@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 html,
 body {
   font-family: 'Avenir', 'Arial', sans-serif;
-  font-size: 18px;
+  font-size: 1.5vw;
   background: var(--white);
   color: var(--black);
   width: 100%;
@@ -20,14 +20,16 @@ p {
 }
 
 header {
-    z-index: 999;
-    position: absolute;
+    /* z-index: 999; */
+    /* position: absolute; */
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #006c90;
 }
 
 .logo {
@@ -52,7 +54,7 @@ header {
     
 
 .menu__logo {
-    width: 200px;
+    width: 300px;
 }
 
 .menu a {
@@ -149,7 +151,7 @@ header {
 }
 
 .solucion img {
-    width: 100px;
+    width: 50%;
     margin-bottom: 20px;
 }
 
@@ -175,6 +177,7 @@ header {
 
 .nosotros-imagen {
     max-width: 50%;
+    max-height: 50%;
 }
 
 .nosotros-imagen img {
@@ -186,9 +189,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    padding: 2% 2%;
+    padding: 5% 5%;
 }
 
 .nosotros-texto p {
@@ -206,7 +209,8 @@ header {
 }
 
 .form__inner-container {
-    width: 50%;
+    width: 46%;
+    padding: 2%;
 }
 
 .form-imagen {
@@ -215,14 +219,12 @@ header {
 
 .form-imagen img {
     object-fit: cover;
-    max-width: 960px;
-    max-height: 960px;
+    width: 100%;
 }
 
 .form {
-    padding-right: 5%;
     height: 100%;
-
+    width: 100%;
 }
 
 .form h2 {
@@ -324,8 +326,8 @@ header {
 
 .footer__logo {
     padding: 0 100px 0 0;
-    width: 250px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
 
 
@@ -357,4 +359,31 @@ header {
     --secondary:#00202b;
     --white:#f2f2f2;
     --black:#252525;
+}
+
+@media screen and (min-width: 1420px){
+
+    p {
+        font-size: 1.3vw;
+    }
+
+    .soluciones__wrapper {
+        padding: 2%;
+        margin-bottom: 20px;
+    }
+
+    .clientes__inner-container {
+        max-width: 2000px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .cliente {
+        max-width: 400px;
+    }
+
+    .cliente img {
+        width: 100%;
+    }
+
 }
